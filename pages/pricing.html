@@ -1,76 +1,280 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Photosnap Website Challenge</title>
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png">
+  <link rel="stylesheet" href="../css/general.css">
+  <link rel="stylesheet" href="../css/pricing/pricing.css">
+  <link rel="stylesheet" href="../css/pricing/pricing-queries.css">
+  <title>Photosnap Website Challenge</title>
 </head>
+
 <body>
-
-  Stories
-  Features
-  Pricing
-
-  Get an invite
-
-  Pricing
-
-  Create a your stories, Photosnap is a platform for photographers and visual storytellers. 
-  It’s the simple way to create and share your photos.
-
-  Monthly
-  Yearly
-
-  Basic
-  Includes basic usage of our platform. Recommended for new and aspiring photographers.
-  $19.00 per month
-  $190.00 per year
-  Pick Plan
-
-  Pro
-  More advanced features available. Recommended for photography veterans and professionals.
-  $39.00 per month
-  $390.00 per year
-  Pick Plan
-
-  Business
-  Additional features available such as more detailed metrics. Recommended for business owners.
-  $99.00 per month
-  $990.00 per year
-  Pick Plan
-
-  Compare
-
-  The Features
-
-  Basic
-  Pro
-  Business
-
-  Unlimited Story Posting
-  Unlimited Photo Upload
-  Embedding Custom Content
-  Customize Metadata
-  Advanced Metrics
-  Photo Downloads
-  Search Engine Indexing
-  Custom Analytics
-
-  We're in Beta. Get your invite today!
-  
-  Get an invite
-
-  Home
-  Stories
-  Features
-  Pricing
-
-  Get an invite
-
-  Copyright 2019. All Rights Reserved
-
+  <header>
+    <div class="header-div">
+      <nav class="nav-bar">
+        <a href="#"> <img src="../assets/shared/desktop/logo.svg" alt="logo icon"> </a>
+        <ul>
+          <a href="./stories.html">
+            <li class="heading-S">STORIES</li>
+          </a>
+          <a href="./features.html">
+            <li class="heading-S">FEATURES</li>
+          </a>
+          <a href="#">
+            <li class="heading-S">PRICING</li>
+          </a>
+        </ul>
+        <a class="menu-btn"><img src="../assets/shared/mobile/menu.svg" alt="menu bar icon"></a>
+        <a class="close-btn"><img src="../assets/shared/mobile/close.svg" alt="close bar icon"></a>
+        <a href="#" class="button bg-black white-color">GET AN INVITE</a>
+      </nav>
+    </div>
+    <div class="mobile-menu-div">
+      <nav class="nav-bar-mobile">
+        <ul class="flex-column">
+          <a href="./stories.html">
+            <li>STORIES</li>
+          </a>
+          <a href="./features.html">
+            <li>FEATURES</li>
+          </a>
+          <a href="#">
+            <li>PRICING</li>
+          </a>
+        </ul>
+      </nav>
+      <button id="mobile-menu-btn" href="#" class="button bg-black white-color">GET AN INVITE</button>
+    </div>
+  </header>
+  <main>
+    <div class="intro-div flex-column bg-black">
+      <img src="../assets/pricing/mobile/hero.jpg"
+        srcset="../assets/pricing/mobile/hero.jpg 768w, ../assets/pricing/tablet/hero.jpg 1440w, ../assets/pricing/desktop/hero.jpg"
+        sizes="(min-width: 375px) 100vw,
+            (min-width: 768px) 100vw,
+            (min-width: 1440px) 100vw" alt="photographer with a sunset background">
+      <div class="intro-content">
+        <h1 class="heading-XL-mobile white-color">PRICING</h1>
+        <p class="text-M white-color">Create a your stories, Photosnap is a platform for photographers and visual
+          storytellers.
+          It’s the simple way
+          to create
+          and share your photos.</p>
+        <div class="floating-line-mobile"></div>
+        <div class="floating-line"></div>
+      </div>
+    </div>
+    <section class="plans-section">
+      <div class="toggler-div">
+        <input type="checkbox" name="check" id="check" class="toggle">
+        <label for="check" class="monthly">Monthly</label>
+        <label for="check" class="yearly">Yearly</label>
+      </div>
+      <div class="plan-container flex-column">
+        <div class="plan-box flex-column">
+          <div class="plan-content">
+            <h2 class="heading-L txt-center">Basic</h2>
+            <p class="text-M txt-center">Includes basic usage of our platform. Recommended for new and aspiring
+              photographers.</p>
+            <a class="button bg-black white-color" href="#">PICK PLAN</a>
+          </div>
+          <div class="plan-price flex-column">
+            <p class="heading-XL txt-center">$19<span class="zero">0</span>.00</p>
+            <p class="text-M txt-center">per month</p>
+          </div>
+          <a class="button bg-black white-color" href="#">PICK PLAN</a>
+        </div>
+        <div class="plan-box flex-column bg-black">
+          <div class="border-top"></div>
+          <div class="plan-content flex-column">
+            <h2 class="heading-L txt-center">Pro</h2>
+            <p class="text-M txt-center">More advanced features available. Recommended for photography veterans and
+              professionals.
+            </p>
+            <a class="button bg-white black-color" href="#">PICK PLAN</a>
+          </div>
+          <div class="plan-price flex-column">
+            <p class="heading-XL txt-center">$39<span class="zero">0</span>.00</p>
+            <p class="text-M txt-center">per month</p>
+          </div>
+          <a class="button bg-white black-color" href="#">PICK PLAN</a>
+        </div>
+        <div class="plan-box flex-column">
+          <div class="plan-content flex-column">
+            <h2 class="heading-L txt-center">Business</h2>
+            <p class="text-M txt-center">Additional features available such as more detailed metrics. Recommended for
+              business
+              owners.</p>
+            <a class="button bg-black white-color" href="#">PICK PLAN</a>
+          </div>
+          <div class="plan-price flex-column">
+            <p class="heading-XL txt-center">$99<span class="zero">0</span>.00</p>
+            <p class="text-M txt-center">per month</p>
+          </div>
+          <a class="button bg-black white-color" href="#">PICK PLAN</a>
+        </div>
+      </div>
+      <div class="feature-container">
+        <h2 class="heading-XL txt-center">COMPARE</h2>
+        <div class="feature-header">
+          <h5 class="heading-S">THE FEATURES</h5>
+          <div class="sub-header">
+            <h6 class="heading-S">BASIC</h6>
+            <h6 class="heading-S">PRO</h6>
+            <h6 class="heading-S">BUSINESS</h6>
+          </div>
+        </div>
+        <div class="feature-div flex-column">
+          <div class="check-div  flex-column">
+            <h6 class="heading-S">UNLIMITED STORY POSTING</h6>
+            <div class="check-box">
+              <div>
+                <p>BASIC</p>
+                <img src="../assets/pricing/desktop/check.svg" alt="Check icon">
+              </div>
+              <div>
+                <p>PRO</p>
+                <img src="../assets/pricing/desktop/check.svg" alt="Check icon">
+              </div>
+              <div>
+                <p>BUSINESS</p>
+                <img src="../assets/pricing/desktop/check.svg" alt="Check icon">
+              </div>
+            </div>
+          </div>
+          <div class="check-div flex-column">
+            <h6 class="heading-S">UNLIMITED PHOTO UPLOAD</h6>
+            <div class="check-box">
+              <div>
+                <p>BASIC</p>
+                <img src="../assets/pricing/desktop/check.svg" alt="Check icon">
+              </div>
+              <div>
+                <p>PRO</p>
+                <img src="../assets/pricing/desktop/check.svg" alt="Check icon">
+              </div>
+              <div>
+                <p>BUSINESS</p>
+                <img src="../assets/pricing/desktop/check.svg" alt="Check icon">
+              </div>
+            </div>
+          </div>
+          <div class="check-div flex-column">
+            <h6 class="heading-S">EMBEDDING CUSTOM CONTENT</h6>
+            <div class="check-box ">
+              <div>
+                <p class="heading-S">BASIC</p>
+              </div>
+              <div>
+                <p>PRO</p>
+                <img src="../assets/pricing/desktop/check.svg" alt="Check icon">
+              </div>
+              <div>
+                <p>BUSINESS</p>
+                <img src="../assets/pricing/desktop/check.svg" alt="Check icon">
+              </div>
+            </div>
+          </div>
+          <div class="check-div flex-column">
+            <h6 class="heading-S">CUSTOMIZE METADATA</h6>
+            <div class="check-box">
+              <div>
+                <p>BASIC</p>
+              </div>
+              <div>
+                <p>PRO</p>
+                <img src="../assets/pricing/desktop/check.svg" alt="Check icon">
+              </div>
+              <div>
+                <p>BUSINESS</p>
+                <img src="../assets/pricing/desktop/check.svg" alt="Check icon">
+              </div>
+            </div>
+          </div>
+          <div class="check-div flex-column">
+            <h6 class="heading-S">ADVANCED METRICS</h6>
+            <div class="check-box">
+              <div>
+                <p>BASIC</p>
+              </div>
+              <div>
+                <p>PRO</p>
+              </div>
+              <div>
+                <p>BUSINESS</p>
+                <img src="../assets/pricing/desktop/check.svg" alt="Check icon">
+              </div>
+            </div>
+          </div>
+          <div class="check-div flex-column">
+            <h6 class="heading-S">PHOTO DOWNLOADS</h6>
+            <div class="check-box">
+              <div>
+                <p>BASIC</p>
+              </div>
+              <div>
+                <p>PRO</p>
+              </div>
+              <div>
+                <p>BUSINESS</p>
+                <img src="../assets/pricing/desktop/check.svg" alt="Check icon">
+              </div>
+            </div>
+          </div>
+          <div class="check-div flex-column">
+            <h6 class="heading-S">SEARCH ENGINE INDEXING</h6>
+            <div class="check-box">
+              <div>
+                <p>BASIC</p>
+              </div>
+              <div>
+                <p>PRO</p>
+              </div>
+              <div>
+                <p>BUSINESS</p>
+                <img src="../assets/pricing/desktop/check.svg" alt="Check icon">
+              </div>
+            </div>
+          </div>
+          <div class="check-div flex-column">
+            <h6 class="heading-S">CUSTOM ANALYTICS</h6>
+            <div class="check-box">
+              <div>
+                <p>BASIC</p>
+              </div>
+              <div>
+                <p>PRO</p>
+              </div>
+              <div>
+                <p>BUSINESS</p>
+                <img src="../assets/pricing/desktop/check.svg" alt="Check icon">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <article class="inv-article">
+      <div class="floating-line-mobile"></div>
+      <div class="floating-line"></div>
+      <div class="invitation-div">
+        <h2 class="heading-XL-mobile white-color">We’re in beta.
+          Get your invite today!</h2>
+        <div class="arrow-button-div">
+          <a class="heading-S arrow-button white-color" href="#">GET AN INVITE </a>
+          <svg class="white-color" xmlns="http://www.w3.org/2000/svg" width="43" height="14">
+            <g fill="currentColor" fill-rule="evenodd" stroke="currentColor">
+              <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+            </g>
+          </svg>
+        </div>
+      </div>
+    </article>
+  </main>
+  <script src="../index.js"></script>
 </body>
+
 </html>
