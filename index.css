@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.main {
+  width: 375px;
+}
+.top_photo {
+  width: 100%;
+  height: 29.5rem;
+  background-image: url(./assets/home/mobile/create-and-share.jpg);
+}
+
+.main_title {
+  margin-top: -2px;
+  width: 100%;
+  height: 41.9rem;
+  background-color: #000000;
+}
+
+.second_title_photo {
+  width: 100%;
+  height: 26rem;
+  background-image: url(./assets/home/mobile/beautiful-stories.jpg);
+}
+
+.third_title_photo {
+  width: 100%;
+  height: 26rem;
+  background-image: url(./assets/home/mobile/designed-for-everyone.jpg);
+}
+
+.styles {
+  width: 37.5rem;
+  height: 37.5rem;
+}
+.mountains {
+  background-image: url(./assets/stories/mobile/mountains.jpg);
+}
+
+.sunset {
+  background-image: url(./assets/stories/mobile/cityscapes.jpg);
+}
+
+.voyage {
+  background-image: url(./assets/stories/mobile/18-days-voyage.jpg);
+}
+
+.architecturals {
+  background-image: url(./assets/stories/mobile/architecturals.jpg);
+}
+
+.footer {
+  width: 100%;
+  height: 53.9rem;
+  background-color: #000000;
+}

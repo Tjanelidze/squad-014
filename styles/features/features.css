@@ -161,7 +161,7 @@ body {
 }
 .footer_upper_part {
   position: relative;
-  background-image: url(./assets/shared/mobile/bg-beta.jpg);
+  background-image: url("../../assets/shared/mobile/bg-beta.jpg");
   height: 28.8rem;
 }
 
