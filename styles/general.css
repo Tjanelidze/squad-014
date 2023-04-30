@@ -1,0 +1,249 @@
+@import url("./fonts.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+body {
+  font-family: "DM Sans";
+}
+
+main {
+  padding-top: 7.5rem;
+}
+
+/* Header */
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99999999;
+}
+
+header a {
+  cursor: pointer;
+}
+
+.nav-bar ul,
+.nav-bar .button,
+.zero,
+.menu-btn.active,
+.close-btn,
+.floating-line {
+  display: none;
+}
+
+.close-btn.active {
+  display: block;
+}
+
+.header-div {
+  padding: 2.8rem 2.4rem;
+  background-color: #fff;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li {
+  transition: color 0.3s ease-in-out;
+  cursor: pointer;
+  color: black;
+}
+
+li:hover,
+.nav-bar-mobile li:hover {
+  color: #dfdfdf;
+  transition: color 0.3s ease-in-out;
+}
+
+header .menu-btn,
+header .close-btn {
+  border: none;
+  background: none;
+}
+
+.mobile-menu-div {
+  background-color: #fff;
+  padding: 3.2rem;
+  position: absolute;
+  left: -100%;
+  width: 100%;
+  transition: 0.5s ease-in-out;
+  z-index: 99999999;
+}
+
+.mobile-menu-div.active {
+  left: 0;
+}
+
+.mobile-menu-div ul {
+  gap: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.25);
+  margin-bottom: 2rem;
+}
+
+.mobile-menu-div a li {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  text-align: center;
+  letter-spacing: 0.25rem;
+  color: #000000;
+}
+
+.mobile-menu-div button {
+  width: -webkit-fill-available;
+}
+
+/* ******************************** */
+
+/* General Styles */
+
+.txt-center {
+  text-align: center;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.floating-line,
+.floating-line-mobile {
+  position: absolute;
+  height: 100%;
+  width: 0.6rem;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    26.57deg,
+    #ffc593 0%,
+    #bc7198 43.29%,
+    #5a77ff 83.33%
+  );
+}
+
+.floating-line-mobile {
+  top: 0;
+  width: 12.8rem;
+  height: 0.6rem;
+  left: unset;
+}
+
+/* ******************************** */
+
+/* Colors */
+
+.black-color {
+  color: #000 !important;
+}
+.white-color {
+  color: #fff !important;
+}
+.bg-black {
+  background-color: #000 !important;
+}
+.bg-white {
+  background-color: #fff !important;
+}
+
+/* **************** */
+
+/* Heading styles */
+
+.heading-XL,
+.heading-XL-mobile {
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 4.8rem;
+  letter-spacing: 0.416667rem;
+  text-transform: uppercase;
+}
+.heading-XL-mobile {
+  font-size: 3.2rem;
+  line-height: 4rem;
+  letter-spacing: 0.333333rem;
+}
+.heading-L {
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 2.5rem;
+  color: #000000;
+}
+.heading-S {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.2rem;
+}
+
+/* ******************************** */
+
+/* Body Styles */
+
+.text-M {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+}
+
+/* ******************************** */
+
+/* Buttons */
+
+.button {
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.2rem;
+  padding: 1.2rem 2.4rem;
+  text-align: center;
+  transition: all 0.5s ease-in-out;
+  border: none;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #dfdfdf !important;
+  transition: all 0.5s ease-in-out;
+}
+.button.bg-black:hover {
+  color: black !important;
+  transition: all 0.5s ease-in-out;
+}
+.arrow-button-div {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+.arrow-button {
+  position: relative;
+  cursor: pointer;
+}
+.arrow-button::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0.1rem;
+  background-color: white;
+  transition: width 0.5s ease-out;
+}
+.arrow-button:hover::before {
+  width: 100%;
+}
+
+/* ******************************** */
