@@ -1,0 +1,102 @@
+.intro-section img {
+  width: 100%;
+}
+
+.intro-content {
+  padding: 4.8rem 2.9rem;
+}
+
+.intro-content h1 {
+  padding: 1.6rem 0;
+}
+
+.intro-content .text-M {
+  margin: 2.4rem 0;
+}
+
+.sub-text-M span {
+  opacity: 0.75;
+}
+
+.gallery-img-div {
+  position: relative;
+  padding: 23.6rem 4.167rem 4rem 4.167rem;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: all 0.3s ease-in-out;
+}
+
+.gallery-img-div .arrow-button-div {
+  justify-content: space-between;
+}
+.gallery-img-content {
+  padding-bottom: 1.6rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  border-bottom: 0.1rem solid rgba(255, 255, 255, 0.25);
+}
+
+.gallery-img-div:nth-child(1) {
+  background-image: url("../../assets/stories/mobile/mountains.jpg");
+}
+.gallery-img-div:nth-child(2) {
+  background-image: url("../../assets/stories/mobile/cityscapes.jpg");
+}
+.gallery-img-div:nth-child(3) {
+  background-image: url("../../assets/stories/mobile/18-days-voyage.jpg");
+}
+.gallery-img-div:nth-child(4) {
+  background-image: url("../../assets/stories/mobile/architecturals.jpg");
+}
+.gallery-img-div:nth-child(5) {
+  background-image: url("../../assets/stories/mobile/world-tour.jpg");
+}
+.gallery-img-div:nth-child(6) {
+  background-image: url("../../assets/stories/mobile/unforeseen-corners.jpg");
+}
+.gallery-img-div:nth-child(7) {
+  background-image: url("../../assets/stories/mobile/king-on-africa.jpg");
+}
+.gallery-img-div:nth-child(8) {
+  background-image: url("../../assets/stories/mobile/trip-to-nowhere.jpg");
+}
+.gallery-img-div:nth-child(9) {
+  background-image: url("../../assets/stories/mobile/rage-of-the-sea.jpg");
+}
+.gallery-img-div:nth-child(10) {
+  background-image: url("../../assets/stories/mobile/running-free.jpg");
+}
+.gallery-img-div:nth-child(11) {
+  background-image: url("../../assets/stories/mobile/behind-the-waves.jpg");
+}
+.gallery-img-div:nth-child(12) {
+  background-image: url("../../assets/stories/mobile/calm-waters.jpg");
+}
+.gallery-img-div:nth-child(13) {
+  background-image: url("../../assets/stories/mobile/milky-way.jpg");
+}
+.gallery-img-div:nth-child(14) {
+  background-image: url("../../assets/stories/mobile/dark-forest.jpg");
+}
+.gallery-img-div:nth-child(15) {
+  background-image: url("../../assets/stories/mobile/somwarpet.jpg");
+}
+.gallery-img-div:nth-child(16) {
+  background-image: url("../../assets/stories/mobile/land-of-dreams.jpg");
+}
+
+.border-linear {
+  top: unset;
+  bottom: 0;
+  display: none;
+}
+
+.gallery-img-div:hover {
+  transform: translateY(-2.4rem);
+  transition: all 0.3s ease-in-out;
+}
+
+.gallery-img-div:hover .border-linear {
+  display: block;
+}

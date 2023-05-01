@@ -1,0 +1,104 @@
+@media (min-width: 48em) {
+  .intro-section {
+    background-image: url("../../assets/stories/tablet/moon-of-appalacia.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 12.2rem 0rem 12.2rem 4rem;
+  }
+
+  .intro-section img {
+    display: none;
+  }
+
+  .intro-content {
+    background-color: unset !important;
+    padding: unset;
+    width: min-content;
+  }
+
+  .intro-content h1 {
+    font-size: 4rem;
+    line-height: 4.8rem;
+    padding-top: 2.4rem;
+    margin: 0.4rem 0;
+  }
+
+  .intro-content .text-M {
+    width: 38.7rem;
+  }
+
+  .gallery-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .gallery-img-div {
+    padding: 34rem 4.267rem 4rem 4.267rem;
+  }
+
+  .gallery-img-div:nth-child(1) {
+    background-image: url("../../assets/stories/desktop/mountains.jpg");
+  }
+  .gallery-img-div:nth-child(2) {
+    background-image: url("../../assets/stories/desktop/cityscapes.jpg");
+  }
+  .gallery-img-div:nth-child(3) {
+    background-image: url("../../assets/stories/desktop/18-days-voyage.jpg");
+  }
+  .gallery-img-div:nth-child(4) {
+    background-image: url("../../assets/stories/desktop/architecturals.jpg");
+  }
+  .gallery-img-div:nth-child(5) {
+    background-image: url("../../assets/stories/desktop/world-tour.jpg");
+  }
+  .gallery-img-div:nth-child(6) {
+    background-image: url("../../assets/stories/desktop/unforeseen-corners.jpg");
+  }
+  .gallery-img-div:nth-child(7) {
+    background-image: url("../../assets/stories/desktop/king-on-africa.jpg");
+  }
+  .gallery-img-div:nth-child(8) {
+    background-image: url("../../assets/stories/desktop/trip-to-nowhere.jpg");
+  }
+  .gallery-img-div:nth-child(9) {
+    background-image: url("../../assets/stories/desktop/rage-of-the-sea.jpg");
+  }
+  .gallery-img-div:nth-child(10) {
+    background-image: url("../../assets/stories/desktop/running-free.jpg");
+  }
+  .gallery-img-div:nth-child(11) {
+    background-image: url("../../assets/stories/desktop/behind-the-waves.jpg");
+  }
+  .gallery-img-div:nth-child(12) {
+    background-image: url("../../assets/stories/desktop/calm-waters.jpg");
+  }
+  .gallery-img-div:nth-child(13) {
+    background-image: url("../../assets/stories/desktop/milky-way.jpg");
+  }
+  .gallery-img-div:nth-child(14) {
+    background-image: url("../../assets/stories/desktop/dark-forest.jpg");
+  }
+  .gallery-img-div:nth-child(15) {
+    background-image: url("../../assets/stories/desktop/somwarpet.jpg");
+  }
+  .gallery-img-div:nth-child(16) {
+    background-image: url("../../assets/stories/desktop/land-of-dreams.jpg");
+  }
+}
+
+@media (min-width: 90em) {
+  .intro-section {
+    background-image: url("../../assets/stories/desktop/moon-of-appalacia.jpg");
+    padding: 12.2rem 0rem 12.2rem 12.2rem;
+  }
+
+  .gallery-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .gallery-img-div {
+    padding: 34rem 4rem 4rem 4rem;
+  }
+}
