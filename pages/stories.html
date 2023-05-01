@@ -1,126 +1,346 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Photosnap Website Challenge</title>
+  <link rel="stylesheet" href="../styles/general.css">
+  <link rel="stylesheet" href="../styles/stories/stories.css">
+  <link rel="stylesheet" href="../styles/stories/stories-queries.css">
+
+  <title>Photosnap Website Challenge</title>
 </head>
+
 <body>
-
-  Stories
-  Features
-  Pricing
-
-  Get an invite
-
-  Last month's featured story
-
-  Hazy full moon of Appalachia
-  March 2nd 2020
-  by John Appleseed
-
-  The dissected plateau area, while not actually made up of geological mountains, 
-  is popularly called "mountains," especially in eastern Kentucky and West Virginia, 
-  and while the ridges are not high, the terrain is extremely rugged.
-
-  Read the story
-
-  April 16th 2020
-  The Mountains
-  by John Appleseed
-  Read Story
-
-  April 14th 2020
-  Sunset Cityscapes
-  by Benjamin Cruz
-  Read Story
-
-  April 11th 2020
-  18 Days Voyage
-  by Alexei Borodin
-  Read Story
-
-  April 9th 2020
-  Architecturals
-  by Samantha Brooke
-  Read Story
-
-  April 7th 2020
-  World Tour 2019
-  by Timothy Wagner
-  Read Story
-
-  April 7th 2020
-  World Tour 2019
-  by Timothy Wagner
-  Read Story
-
-  April 3rd 2020
-  Unforeseen Corners
-  by William Malcolm
-  Read Story
-
-  March 29th 2020
-  King on Africa: Part II
-  by Tim Hillenburg
-  Read Story
-
-  March 21st 2020
-  The Trip to Nowhere
-  by Felicia Rourke
-  Read Story
-
-  March 19th 2020
-  Rage of The Sea
-  by Mohammed Abdul
-  Read Story
-
-  March 16th 2020
-  Running Free
-  by Michelle
-  Read Story
-
-  March 11th 2020
-  Behind the Waves
-  by Lamarr Wilson
-  Read Story
-
-  March 9th 2020
-  Calm Waters
-  by Samantha Brooke
-  Read Story
-
-  March 5th 2020
-  The Milky Way
-  by Benjamin Cruz
-  Read Story
-
-  March 4th 2020
-  Night at The Dark Forest
-  by  Mohammed Abdul
-  Read Story
-
-  March 1st 2020
-  Somwarpet’s Beauty
-  by Michelle
-  Read Story
-
-  February 25th 2020
-  Land of Dreams
-  by William Malcolm
-  Read Story
-
-  Home
-  Stories
-  Features
-  Pricing
-
-  Get an invite
-
-  Copyright 2019. All Rights Reserved
-
+  <header>
+    <div class="header-div">
+      <nav class="nav-bar">
+        <a href="#"> <img src="../assets/shared/desktop/logo.svg" alt="logo icon"> </a>
+        <ul>
+          <a href="./stories.html">
+            <li class="heading-S">STORIES</li>
+          </a>
+          <a href="./features.html">
+            <li class="heading-S">FEATURES</li>
+          </a>
+          <a href="./pricing.html">
+            <li class="heading-S">PRICING</li>
+          </a>
+        </ul>
+        <a class="menu-btn"><img src="../assets/shared/mobile/menu.svg" alt="menu bar icon"></a>
+        <a class="close-btn"><img src="../assets/shared/mobile/close.svg" alt="close bar icon"></a>
+        <a href="#" class="button bg-black white-color">GET AN INVITE</a>
+      </nav>
+    </div>
+    <div class="mobile-menu-div">
+      <nav class="nav-bar-mobile">
+        <ul class="flex-column">
+          <a href="./stories.html">
+            <li>STORIES</li>
+          </a>
+          <a href="./features.html">
+            <li>FEATURES</li>
+          </a>
+          <a href="#">
+            <li>PRICING</li>
+          </a>
+        </ul>
+      </nav>
+      <button id="mobile-menu-btn" href="#" class="button bg-black white-color">GET AN INVITE</button>
+    </div>
+  </header>
+  <main>
+    <section class="intro-section flex-column">
+      <img src="../assets/stories/mobile/moon-of-appalacia.jpg"
+        srcset="../assets/stories/mobile/moon-of-appalacia.jpg 768w, ../assets/stories/tablet/moon-of-appalacia.jpg 1440w, ../assets/stories/desktop/moon-of-appalacia.jpg.jpg"
+        sizes="(min-width: 375px) 100vw,
+                  (min-width: 768px) 100vw,
+                  (min-width: 1440px) 100vw" alt="forest with  moonrise background">
+      <div class="intro-content bg-black">
+        <h4 class="heading-S white-color">LAST MONTH’S FEATURED STORY</h4>
+        <h1 class="heading-XL-mobile white-color">HAZY FULL MOON OF APPALACHIA</h1>
+        <p class="sub-text-M"><span>March 2nd 2020 &nbsp;</span>
+          by John Appleseed
+        </p>
+        <p class="text-M white-color">The dissected plateau area, while not actually made up of geological mountains, is
+          popularly
+          called
+          "mountains,"
+          especially in eastern Kentucky and West Virginia, and while the ridges are not high, the terrain is extremely
+          rugged.</p>
+        <div class="arrow-button-div">
+          <a class="heading-S arrow-button white-color" href="#">GET AN INVITE </a>
+          <svg class="white-color" xmlns="http://www.w3.org/2000/svg" width="43" height="14">
+            <g fill="currentColor" fill-rule="evenodd" stroke="currentColor">
+              <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+    <section class="gallery-section">
+      <div class="gallery-container">
+        <div class="gallery-img-div">
+          <div class="gallery-img-content">
+            <h4 class="sub-text-M">April 14th 2020</h4>
+            <h3 class="heading-M white-color">The Mountains</h3>
+            <h4 class="sub-text-M">by John Appleseed</h4>
+          </div>
+          <div class="arrow-button-div">
+            <a class="heading-S arrow-button white-color" href="#">GET AN INVITE </a>
+            <svg class="white-color" xmlns="http://www.w3.org/2000/svg" width="43" height="14">
+              <g fill="currentColor" fill-rule="evenodd" stroke="currentColor">
+                <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+              </g>
+            </svg>
+          </div>
+          <div class="border-linear"></div>
+        </div>
+        <div class="gallery-img-div">
+          <div class="gallery-img-content">
+            <h4 class="sub-text-M">April 14th 2020</h4>
+            <h3 class="heading-M white-color">The Mountains</h3>
+            <h4 class="sub-text-M">by John Appleseed</h4>
+          </div>
+          <div class="arrow-button-div">
+            <a class="heading-S arrow-button white-color" href="#">GET AN INVITE </a>
+            <svg class="white-color" xmlns="http://www.w3.org/2000/svg" width="43" height="14">
+              <g fill="currentColor" fill-rule="evenodd" stroke="currentColor">
+                <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+              </g>
+            </svg>
+          </div>
+          <div class="border-linear"></div>
+        </div>
+        <div class="gallery-img-div">
+          <div class="gallery-img-content">
+            <h4 class="sub-text-M">April 14th 2020</h4>
+            <h3 class="heading-M white-color">The Mountains</h3>
+            <h4 class="sub-text-M">by John Appleseed</h4>
+          </div>
+          <div class="arrow-button-div">
+            <a class="heading-S arrow-button white-color" href="#">GET AN INVITE </a>
+            <svg class="white-color" xmlns="http://www.w3.org/2000/svg" width="43" height="14">
+              <g fill="currentColor" fill-rule="evenodd" stroke="currentColor">
+                <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+              </g>
+            </svg>
+          </div>
+          <div class="border-linear"></div>
+        </div>
+        <div class="gallery-img-div">
+          <div class="gallery-img-content">
+            <h4 class="sub-text-M">April 14th 2020</h4>
+            <h3 class="heading-M white-color">The Mountains</h3>
+            <h4 class="sub-text-M">by John Appleseed</h4>
+          </div>
+          <div class="arrow-button-div">
+            <a class="heading-S arrow-button white-color" href="#">GET AN INVITE </a>
+            <svg class="white-color" xmlns="http://www.w3.org/2000/svg" width="43" height="14">
+              <g fill="currentColor" fill-rule="evenodd" stroke="currentColor">
+                <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+              </g>
+            </svg>
+          </div>
+          <div class="border-linear"></div>
+        </div>
+        <div class="gallery-img-div">
+          <div class="gallery-img-content">
+            <h4 class="sub-text-M">April 14th 2020</h4>
+            <h3 class="heading-M white-color">The Mountains</h3>
+            <h4 class="sub-text-M">by John Appleseed</h4>
+          </div>
+          <div class="arrow-button-div">
+            <a class="heading-S arrow-button white-color" href="#">GET AN INVITE </a>
+            <svg class="white-color" xmlns="http://www.w3.org/2000/svg" width="43" height="14">
+              <g fill="currentColor" fill-rule="evenodd" stroke="currentColor">
+                <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+              </g>
+            </svg>
+          </div>
+          <div class="border-linear"></div>
+        </div>
+        <div class="gallery-img-div">
+          <div class="gallery-img-content">
+            <h4 class="sub-text-M">April 14th 2020</h4>
+            <h3 class="heading-M white-color">The Mountains</h3>
+            <h4 class="sub-text-M">by John Appleseed</h4>
+          </div>
+          <div class="arrow-button-div">
+            <a class="heading-S arrow-button white-color" href="#">GET AN INVITE </a>
+            <svg class="white-color" xmlns="http://www.w3.org/2000/svg" width="43" height="14">
+              <g fill="currentColor" fill-rule="evenodd" stroke="currentColor">
+                <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+              </g>
+            </svg>
+          </div>
+          <div class="border-linear"></div>
+        </div>
+        <div class="gallery-img-div">
+          <div class="gallery-img-content">
+            <h4 class="sub-text-M">April 14th 2020</h4>
+            <h3 class="heading-M white-color">The Mountains</h3>
+            <h4 class="sub-text-M">by John Appleseed</h4>
+          </div>
+          <div class="arrow-button-div">
+            <a class="heading-S arrow-button white-color" href="#">GET AN INVITE </a>
+            <svg class="white-color" xmlns="http://www.w3.org/2000/svg" width="43" height="14">
+              <g fill="currentColor" fill-rule="evenodd" stroke="currentColor">
+                <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+              </g>
+            </svg>
+          </div>
+          <div class="border-linear"></div>
+        </div>
+        <div class="gallery-img-div">
+          <div class="gallery-img-content">
+            <h4 class="sub-text-M">April 14th 2020</h4>
+            <h3 class="heading-M white-color">The Mountains</h3>
+            <h4 class="sub-text-M">by John Appleseed</h4>
+          </div>
+          <div class="arrow-button-div">
+            <a class="heading-S arrow-button white-color" href="#">GET AN INVITE </a>
+            <svg class="white-color" xmlns="http://www.w3.org/2000/svg" width="43" height="14">
+              <g fill="currentColor" fill-rule="evenodd" stroke="currentColor">
+                <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+              </g>
+            </svg>
+          </div>
+          <div class="border-linear"></div>
+        </div>
+        <div class="gallery-img-div">
+          <div class="gallery-img-content">
+            <h4 class="sub-text-M">April 14th 2020</h4>
+            <h3 class="heading-M white-color">The Mountains</h3>
+            <h4 class="sub-text-M">by John Appleseed</h4>
+          </div>
+          <div class="arrow-button-div">
+            <a class="heading-S arrow-button white-color" href="#">GET AN INVITE </a>
+            <svg class="white-color" xmlns="http://www.w3.org/2000/svg" width="43" height="14">
+              <g fill="currentColor" fill-rule="evenodd" stroke="currentColor">
+                <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+              </g>
+            </svg>
+          </div>
+          <div class="border-linear"></div>
+        </div>
+        <div class="gallery-img-div">
+          <div class="gallery-img-content">
+            <h4 class="sub-text-M">April 14th 2020</h4>
+            <h3 class="heading-M white-color">The Mountains</h3>
+            <h4 class="sub-text-M">by John Appleseed</h4>
+          </div>
+          <div class="arrow-button-div">
+            <a class="heading-S arrow-button white-color" href="#">GET AN INVITE </a>
+            <svg class="white-color" xmlns="http://www.w3.org/2000/svg" width="43" height="14">
+              <g fill="currentColor" fill-rule="evenodd" stroke="currentColor">
+                <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+              </g>
+            </svg>
+          </div>
+          <div class="border-linear"></div>
+        </div>
+        <div class="gallery-img-div">
+          <div class="gallery-img-content">
+            <h4 class="sub-text-M">April 14th 2020</h4>
+            <h3 class="heading-M white-color">The Mountains</h3>
+            <h4 class="sub-text-M">by John Appleseed</h4>
+          </div>
+          <div class="arrow-button-div">
+            <a class="heading-S arrow-button white-color" href="#">GET AN INVITE </a>
+            <svg class="white-color" xmlns="http://www.w3.org/2000/svg" width="43" height="14">
+              <g fill="currentColor" fill-rule="evenodd" stroke="currentColor">
+                <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+              </g>
+            </svg>
+          </div>
+          <div class="border-linear"></div>
+        </div>
+        <div class="gallery-img-div">
+          <div class="gallery-img-content">
+            <h4 class="sub-text-M">April 14th 2020</h4>
+            <h3 class="heading-M white-color">The Mountains</h3>
+            <h4 class="sub-text-M">by John Appleseed</h4>
+          </div>
+          <div class="arrow-button-div">
+            <a class="heading-S arrow-button white-color" href="#">GET AN INVITE </a>
+            <svg class="white-color" xmlns="http://www.w3.org/2000/svg" width="43" height="14">
+              <g fill="currentColor" fill-rule="evenodd" stroke="currentColor">
+                <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+              </g>
+            </svg>
+          </div>
+          <div class="border-linear"></div>
+        </div>
+        <div class="gallery-img-div">
+          <div class="gallery-img-content">
+            <h4 class="sub-text-M">April 14th 2020</h4>
+            <h3 class="heading-M white-color">The Mountains</h3>
+            <h4 class="sub-text-M">by John Appleseed</h4>
+          </div>
+          <div class="arrow-button-div">
+            <a class="heading-S arrow-button white-color" href="#">GET AN INVITE </a>
+            <svg class="white-color" xmlns="http://www.w3.org/2000/svg" width="43" height="14">
+              <g fill="currentColor" fill-rule="evenodd" stroke="currentColor">
+                <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+              </g>
+            </svg>
+          </div>
+          <div class="border-linear"></div>
+        </div>
+        <div class="gallery-img-div">
+          <div class="gallery-img-content">
+            <h4 class="sub-text-M">April 14th 2020</h4>
+            <h3 class="heading-M white-color">The Mountains</h3>
+            <h4 class="sub-text-M">by John Appleseed</h4>
+          </div>
+          <div class="arrow-button-div">
+            <a class="heading-S arrow-button white-color" href="#">GET AN INVITE </a>
+            <svg class="white-color" xmlns="http://www.w3.org/2000/svg" width="43" height="14">
+              <g fill="currentColor" fill-rule="evenodd" stroke="currentColor">
+                <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+              </g>
+            </svg>
+          </div>
+          <div class="border-linear"></div>
+        </div>
+        <div class="gallery-img-div">
+          <div class="gallery-img-content">
+            <h4 class="sub-text-M">April 14th 2020</h4>
+            <h3 class="heading-M white-color">The Mountains</h3>
+            <h4 class="sub-text-M">by John Appleseed</h4>
+          </div>
+          <div class="arrow-button-div">
+            <a class="heading-S arrow-button white-color" href="#">GET AN INVITE </a>
+            <svg class="white-color" xmlns="http://www.w3.org/2000/svg" width="43" height="14">
+              <g fill="currentColor" fill-rule="evenodd" stroke="currentColor">
+                <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+              </g>
+            </svg>
+          </div>
+          <div class="border-linear"></div>
+        </div>
+        <div class="gallery-img-div">
+          <div class="gallery-img-content">
+            <h4 class="sub-text-M">April 14th 2020</h4>
+            <h3 class="heading-M white-color">The Mountains</h3>
+            <h4 class="sub-text-M">by John Appleseed</h4>
+          </div>
+          <div class="arrow-button-div">
+            <a class="heading-S arrow-button white-color" href="#">GET AN INVITE </a>
+            <svg class="white-color" xmlns="http://www.w3.org/2000/svg" width="43" height="14">
+              <g fill="currentColor" fill-rule="evenodd" stroke="currentColor">
+                <path d="M0 7h41.864M35.428 1l6 6-6 6" />
+              </g>
+            </svg>
+          </div>
+          <div class="border-linear"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="../index.js"></script>
 </body>
+
 </html>
