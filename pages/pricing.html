@@ -23,7 +23,7 @@
           <a href="./features.html">
             <li class="heading-S">FEATURES</li>
           </a>
-          <a href="#">
+          <a href="./pricing.html">
             <li class="heading-S">PRICING</li>
           </a>
         </ul>
@@ -88,7 +88,7 @@
           <a class="button bg-black white-color" href="#">PICK PLAN</a>
         </div>
         <div class="plan-box flex-column bg-black">
-          <div class="border-top"></div>
+          <div class="border-linear"></div>
           <div class="plan-content flex-column">
             <h2 class="heading-L txt-center">Pro</h2>
             <p class="text-M txt-center">More advanced features available. Recommended for photography veterans and
@@ -275,6 +275,14 @@
     </article>
   </main>
   <script src="../index.js"></script>
+  <script>
+    const check = document.querySelector('#check');
+    check.addEventListener('click', () => {
+      zero.forEach((element) => {
+        element.style.display = check.checked ? 'inline-block' : 'none';
+      });
+    });
+  </script>
 </body>
 
 </html>
