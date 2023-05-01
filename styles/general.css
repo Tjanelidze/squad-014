@@ -18,7 +18,181 @@ main {
   padding-top: 7.5rem;
 }
 
-/* Header */
+.nav-bar ul,
+.nav-bar .button,
+.zero,
+.menu-btn.active,
+.close-btn,
+.floating-line {
+  display: none;
+}
+
+/* General Styles */
+
+.txt-center {
+  text-align: center;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.floating-line,
+.floating-line-mobile {
+  position: absolute;
+  height: 100%;
+  width: 0.6rem;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    26.57deg,
+    #ffc593 0%,
+    #bc7198 43.29%,
+    #5a77ff 83.33%
+  );
+}
+
+.floating-line-mobile {
+  top: 0;
+  width: 12.8rem;
+  height: 0.6rem;
+  left: unset;
+}
+
+.border-linear {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0.6rem;
+  background: linear-gradient(
+    26.57deg,
+    #ffc593 0%,
+    #bc7198 43.29%,
+    #5a77ff 83.33%
+  );
+  width: 100%;
+}
+
+/* ******************************** */
+
+/* Colors */
+
+.black-color {
+  color: #000 !important;
+}
+.white-color {
+  color: #fff !important;
+}
+.bg-black {
+  background-color: #000 !important;
+}
+.bg-white {
+  background-color: #fff !important;
+}
+
+/* **************** */
+
+/* Heading styles */
+
+.heading-XL,
+.heading-XL-mobile {
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 4.8rem;
+  letter-spacing: 0.416667rem;
+  text-transform: uppercase;
+}
+.heading-XL-mobile {
+  font-size: 3.2rem;
+  line-height: 4rem;
+  letter-spacing: 0.333333rem;
+}
+.heading-L {
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 2.5rem;
+  color: #000000;
+}
+
+.heading-M {
+  font-weight: 700;
+  line-height: 2.5rem;
+  font-size: 1.8rem;
+}
+.heading-S {
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.2rem;
+}
+
+/* ******************************** */
+
+/* Body Styles */
+
+.text-M {
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+}
+
+.sub-text-M {
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 1.7rem;
+  color: #ffffff;
+}
+
+/* ******************************** */
+
+/* Buttons */
+
+.button {
+  font-weight: 700;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.2rem;
+  padding: 1.2rem 2.4rem;
+  text-align: center;
+  transition: all 0.5s ease-in-out;
+  border: none;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #dfdfdf !important;
+  transition: all 0.5s ease-in-out;
+}
+.button.bg-black:hover {
+  color: black !important;
+  transition: all 0.5s ease-in-out;
+}
+.arrow-button-div {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+.arrow-button {
+  position: relative;
+  cursor: pointer;
+}
+.arrow-button::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 0.1rem;
+  background-color: white;
+  transition: width 0.5s ease-out;
+}
+.arrow-button:hover::before {
+  width: 100%;
+}
+
+/* ******************************** */
+
+/* Responsive Header */
 
 header {
   position: fixed;
@@ -31,22 +205,13 @@ header a {
   cursor: pointer;
 }
 
-.nav-bar ul,
-.nav-bar .button,
-.zero,
-.menu-btn.active,
-.close-btn,
-.floating-line {
-  display: none;
+.header-div {
+  padding: 2.8rem 2.4rem;
+  background-color: #fff;
 }
 
 .close-btn.active {
   display: block;
-}
-
-.header-div {
-  padding: 2.8rem 2.4rem;
-  background-color: #fff;
 }
 
 .nav-bar {
@@ -107,143 +272,39 @@ header .close-btn {
   width: -webkit-fill-available;
 }
 
-/* ******************************** */
+@media (min-width: 48em) {
+  main {
+    padding-top: 7.2rem;
+  }
+  .header-div {
+    padding: 1.6rem 4rem;
+  }
 
-/* General Styles */
+  .nav-bar ul {
+    display: flex;
+    gap: 3.7rem;
+  }
 
-.txt-center {
-  text-align: center;
-}
-.flex-column {
-  display: flex;
-  flex-direction: column;
-}
-.floating-line,
-.floating-line-mobile {
-  position: absolute;
-  height: 100%;
-  width: 0.6rem;
-  top: 0;
-  left: 0;
-  background: linear-gradient(
-    26.57deg,
-    #ffc593 0%,
-    #bc7198 43.29%,
-    #5a77ff 83.33%
-  );
+  .close-btn,
+  .menu-btn {
+    display: none;
+  }
+
+  .nav-bar .button {
+    display: block;
+  }
 }
 
-.floating-line-mobile {
-  top: 0;
-  width: 12.8rem;
-  height: 0.6rem;
-  left: unset;
+@media (min-width: 90em) {
+  .header-div {
+    padding: 1.6rem 16.5rem;
+  }
 }
 
 /* ******************************** */
 
-/* Colors */
+/* Responsive Footer */
 
-.black-color {
-  color: #000 !important;
+footer {
+  padding: 5.6rem 6rem;
 }
-.white-color {
-  color: #fff !important;
-}
-.bg-black {
-  background-color: #000 !important;
-}
-.bg-white {
-  background-color: #fff !important;
-}
-
-/* **************** */
-
-/* Heading styles */
-
-.heading-XL,
-.heading-XL-mobile {
-  font-weight: 700;
-  font-size: 4rem;
-  line-height: 4.8rem;
-  letter-spacing: 0.416667rem;
-  text-transform: uppercase;
-}
-.heading-XL-mobile {
-  font-size: 3.2rem;
-  line-height: 4rem;
-  letter-spacing: 0.333333rem;
-}
-.heading-L {
-  font-weight: 700;
-  font-size: 2.4rem;
-  line-height: 2.5rem;
-  color: #000000;
-}
-.heading-S {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 1.2rem;
-  line-height: 1.6rem;
-  letter-spacing: 0.2rem;
-}
-
-/* ******************************** */
-
-/* Body Styles */
-
-.text-M {
-  font-weight: 400;
-  font-size: 1.5rem;
-  line-height: 2.5rem;
-  mix-blend-mode: normal;
-  opacity: 0.6;
-}
-
-/* ******************************** */
-
-/* Buttons */
-
-.button {
-  font-weight: 700;
-  font-size: 1.2rem;
-  line-height: 1.6rem;
-  letter-spacing: 0.2rem;
-  padding: 1.2rem 2.4rem;
-  text-align: center;
-  transition: all 0.5s ease-in-out;
-  border: none;
-  cursor: pointer;
-}
-.button:hover {
-  background-color: #dfdfdf !important;
-  transition: all 0.5s ease-in-out;
-}
-.button.bg-black:hover {
-  color: black !important;
-  transition: all 0.5s ease-in-out;
-}
-.arrow-button-div {
-  display: flex;
-  align-items: center;
-  gap: 1.6rem;
-}
-.arrow-button {
-  position: relative;
-  cursor: pointer;
-}
-.arrow-button::before {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 0.1rem;
-  background-color: white;
-  transition: width 0.5s ease-out;
-}
-.arrow-button:hover::before {
-  width: 100%;
-}
-
-/* ******************************** */
