@@ -1,0 +1,314 @@
+@media screen and (min-width: 768px) {
+  .main {
+    padding-top: 7.5rem;
+    width: 76.8rem;
+  }
+
+  .box_top_one_third {
+    display: grid;
+    grid-template-columns: 49.5rem 27.3rem;
+    grid-template-rows: 65rem;
+  }
+  .top_photo {
+    width: 100%;
+    height: 100%;
+    background-image: url(./assets/home/tablet/create-and-share.jpg);
+    background-repeat: no-repeat;
+  }
+
+  .main_title {
+    grid-column: 1 /2;
+    grid-row: 1/2;
+    margin-top: 0;
+    width: 100%;
+    height: 65rem;
+    padding-top: 173px;
+    padding-left: 54px;
+  }
+
+  .main_title::before {
+    display: block;
+    position: absolute;
+    top: 173px;
+    left: 0;
+    content: "";
+    width: 6px;
+    height: 30.4rem;
+    background: linear-gradient(
+      26.57deg,
+      #ffc593 0%,
+      #bc7198 43.29%,
+      #5a77ff 83.33%
+    );
+  }
+
+  .title_h {
+    padding-top: 0;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 4.16667px;
+  }
+
+  .title_p {
+    width: 38.7rem;
+    padding-top: 21px;
+  }
+  .title_button {
+    margin-top: 48px;
+  }
+
+  .second_part {
+    display: grid;
+    grid-template-columns: 27.3rem 49.5rem;
+    grid-template-rows: 60rem;
+  }
+
+  .second_title_photo {
+    width: 100%;
+    height: 100%;
+    background-image: url(./assets/home/tablet/beautiful-stories.jpg);
+    background-repeat: no-repeat;
+  }
+
+  .common_style_title {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    padding-top: 136px;
+    padding-left: 54px;
+  }
+  .common_style_title_h {
+    width: 38.7rem;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 4.16667px;
+  }
+
+  .common_style_title_p {
+    padding-top: 21px;
+  }
+
+  .common_button {
+    padding-top: 48px;
+  }
+
+  .third_part {
+    display: grid;
+    grid-template-columns: 49.5rem 27.3rem;
+    grid-template-rows: 60rem;
+  }
+
+  .third_title_photo {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    width: 100%;
+    height: 100%;
+    background-image: url(./assets/home/tablet/designed-for-everyone.jpg);
+    background-repeat: no-repeat;
+  }
+
+  .diff_title_h {
+    width: 38.7rem;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 4.16667px;
+    padding-top: 24px;
+  }
+
+  .styles {
+    width: 100%;
+    height: 100%;
+    padding-top: 361px;
+    padding-left: 43px;
+    background-repeat: no-repeat;
+    /* filter: contrast(150%); */
+  }
+
+  .middle_part {
+    display: grid;
+    grid-template-rows: 50rem 50rem;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .mountains {
+    background-image: url(./assets/stories/desktop/mountains.jpg);
+  }
+
+  .sunset {
+    background-image: url(./assets/stories/desktop/cityscapes.jpg);
+  }
+
+  .voyage {
+    background-image: url(./assets/stories/desktop/18-days-voyage.jpg);
+  }
+
+  .architecturals {
+    background-image: url(./assets/stories/desktop//architecturals.jpg);
+  }
+
+  .bottom_3 {
+    padding: 120px 156px 120px 155px;
+    gap: 80px;
+  }
+
+  .description_p {
+    width: 45.7rem;
+    height: 5rem;
+  }
+  /* .footer {
+    width: 100%;
+    height: 53.9rem;
+    background-color: #000000;
+  } */
+}
+
+@media screen and (min-width: 1440px) {
+  .main {
+    padding-top: 7.5rem;
+    width: 144rem;
+  }
+
+  .box_top_one_third {
+    display: grid;
+    grid-template-columns: 61rem 1fr;
+    grid-template-rows: 65rem;
+  }
+  .top_photo {
+    width: 100%;
+    height: 100%;
+    background-image: url(./assets/home/desktop/create-and-share.jpg);
+    background-repeat: no-repeat;
+  }
+
+  .main_title {
+    grid-column: 1 /2;
+    grid-row: 1/2;
+    margin-top: 0;
+    width: 100%;
+    height: 65rem;
+
+    padding-left: 54px;
+  }
+
+  .main_title::before {
+    display: block;
+    content: "";
+    width: 6px;
+    height: 30.4rem;
+    background: linear-gradient(
+      26.57deg,
+      #ffc593 0%,
+      #bc7198 43.29%,
+      #5a77ff 83.33%
+    );
+  }
+
+  .title_h {
+    width: 38.7rem;
+    height: 14.4rem;
+    padding-top: 0;
+  }
+
+  .title_p {
+    width: 38.7rem;
+    height: 10rem;
+    padding-top: 21px;
+  }
+  .title_button {
+    margin-top: 45px;
+  }
+
+  .second_part {
+    display: grid;
+    grid-template-columns: 1fr 61rem;
+    grid-template-rows: 60rem;
+  }
+
+  .second_title_photo {
+    width: 100%;
+    height: 100%;
+    background-image: url(./assets/home/desktop/beautiful-stories.jpg);
+    background-repeat: no-repeat;
+  }
+
+  .common_style_title {
+    padding-left: 112px;
+  }
+  .common_style_title_h {
+    width: 35rem;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: 4.16667px;
+  }
+
+  .common_style_title_p {
+    width: 38.7rem;
+    height: 10rem;
+    padding-top: 21px;
+  }
+
+  .common_button {
+    padding-top: 48px;
+  }
+
+  .third_part {
+    display: grid;
+    grid-template-columns: 61rem 1fr;
+  }
+
+  .third_title_photo {
+    background-image: url(./assets/home/desktop/designed-for-everyone.jpg);
+  }
+
+  .styles {
+    padding-left: 40px;
+
+    /* filter: contrast(150%); */
+  }
+
+  .middle_part {
+    display: grid;
+    grid-template-rows: 50rem;
+    grid-template-columns: auto auto auto auto;
+  }
+
+  .mountains {
+    background-image: url(./assets/stories/desktop/mountains.jpg);
+  }
+
+  .sunset {
+    background-image: url(./assets/stories/desktop/cityscapes.jpg);
+  }
+
+  .voyage {
+    background-image: url(./assets/stories/desktop/18-days-voyage.jpg);
+  }
+
+  .architecturals {
+    background-image: url(./assets/stories/desktop//architecturals.jpg);
+  }
+
+  .bottom_3 {
+    grid-template-columns: auto auto auto;
+    padding: 120px 165px;
+    gap: 30px;
+  }
+
+  #noLimit {
+    padding-top: 18px;
+  }
+
+  #noLimit_title {
+    padding-top: 66px;
+  }
+
+  .description_p {
+    width: 35rem;
+    height: 7.5rem;
+  }
+  /* .footer {
+    width: 100%;
+    height: 53.9rem;
+    background-color: #000000;
+  } */
+}

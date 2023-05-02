@@ -25,16 +25,45 @@
     <title>Frontend Mentor | Photosnap Website Challenge</title>
   </head>
   <body>
-    <main class="main">
-      <div class="header">
-        <img class="main_logo" src="../assets/shared/desktop/logo.svg" alt="" />
-        <div class="menu">
-          <button class="menu_icon">
-            <img src="../assets/shared/mobile/menu.svg" alt="" />
-          </button>
-          <div class="list">Stories Features Pricing Get an invite</div>
-        </div>
+    <header>
+      <div class="header-div">
+        <nav class="nav-bar">
+          <a href="#"> <img src="../assets/shared/desktop/logo.svg" alt="logo icon"> </a>
+          <ul>
+            <a href="./stories.html">
+              <li class="heading-S">STORIES</li>
+            </a>
+            <a href="./features.html">
+              <li class="heading-S">FEATURES</li>
+            </a>
+            <a href="#">
+              <li class="heading-S">PRICING</li>
+            </a>
+          </ul>
+          <a class="menu-btn"><img src="../assets/shared/mobile/menu.svg" alt="menu bar icon"></a>
+          <a class="close-btn"><img src="../assets/shared/mobile/close.svg" alt="close bar icon"></a>
+          <a href="#" class="button bg-black white-color">GET AN INVITE</a>
+        </nav>
       </div>
+      <div class="mobile-menu-div">
+        <nav class="nav-bar-mobile">
+          <ul class="flex-column">
+            <a href="./stories.html">
+              <li>STORIES</li>
+            </a>
+            <a href="./features.html">
+              <li>FEATURES</li>
+            </a>
+            <a href="#">
+              <li>PRICING</li>
+            </a>
+          </ul>
+        </nav>
+        <button id="mobile-menu-btn" href="#" class="button bg-black white-color">GET AN INVITE</button>
+      </div>
+    </header>
+    <main class="main">
+     
       <div class="title">
         <img class="hero" src="../assets/features/mobile/hero.jpg" alt="" />
         <div class="title_box">
@@ -170,7 +199,7 @@
             />
           </div>
           <nav class="footer_nav">
-          <a class="footer_nav_items" href="index.html">Home</a>
+          <a class="footer_nav_items" href="../index.html">Home</a>
           <a class="footer_nav_items" href="stories.html">Stories</a>
           <a class="footer_nav_items" href="features.html">Features</a>
           <a class="footer_nav_items" href="pricing.html">Pricing</a>
