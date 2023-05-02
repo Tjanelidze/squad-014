@@ -94,20 +94,6 @@ input[type="checkbox"].toggle:checked ~ .yearly::after {
   gap: 2.4rem;
 }
 
-.plan-box:nth-child(2) .border-top {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 0.6rem;
-  background: linear-gradient(
-    26.57deg,
-    #ffc593 0%,
-    #bc7198 43.29%,
-    #5a77ff 83.33%
-  );
-  width: 100%;
-}
-
 .plan-box:nth-child(2) {
   position: relative;
 }

@@ -8,10 +8,6 @@
     padding: 1.6rem 4rem;
   }
 
-  .nav-bar ul {
-    display: flex;
-    gap: 3.7rem;
-  }
   .plan-content h2,
   .plan-content p {
     text-align: unset;
@@ -24,15 +20,12 @@
   }
   .floating-line-mobile,
   .plan-box > a,
-  .check-box p,
-  .close-btn,
-  .menu-btn {
+  .check-box p {
     display: none;
   }
   .floating-line,
   .plan-content a,
-  .feature-container h2,
-  .nav-bar .button {
+  .feature-container h2 {
     display: block;
   }
   .intro-div {
@@ -59,7 +52,7 @@
   .plan-content p {
     margin: 1.8rem 0 3.2rem 0;
   }
-  .plan-box:nth-child(2) .border-top {
+  .plan-box:nth-child(2) .border-linear {
     width: 0.6rem;
     height: 100%;
   }
@@ -103,9 +96,6 @@
   }
 }
 @media (min-width: 90em) {
-  .header-div {
-    padding: 1.6rem 16.5rem;
-  }
   .intro-content {
     padding: 0 11.2rem;
   }
@@ -130,7 +120,7 @@
   .plan-box:nth-child(2) {
     padding: 8.8rem 4rem 7.1rem 4rem;
   }
-  .plan-box:nth-child(2) .border-top {
+  .plan-box:nth-child(2) .border-linear {
     height: 0.6rem;
     width: 100%;
   }
