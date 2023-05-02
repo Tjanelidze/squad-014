@@ -261,9 +261,31 @@
   }
 
   .styles {
+    position: relative;
     padding-left: 40px;
-
+    transition: top ease 0.5s;
     /* filter: contrast(150%); */
+  }
+
+  .styles:hover {
+    cursor: pointer;
+    top: -24px;
+  }
+
+  .styles:hover::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 36rem;
+    height: 6px;
+    left: 0;
+    bottom: 0;
+    background: linear-gradient(
+      26.57deg,
+      #ffc593 0%,
+      #bc7198 43.29%,
+      #5a77ff 83.33%
+    );
   }
 
   .middle_part {
