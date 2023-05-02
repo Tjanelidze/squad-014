@@ -222,16 +222,16 @@ main {
 }
 
 .gallery-img-div:nth-child(1) {
-  background-image: url("../../assets/stories/mobile/mountains.jpg");
+  background-image: url("../assets/stories/mobile/mountains.jpg");
 }
 .gallery-img-div:nth-child(2) {
-  background-image: url("../../assets/stories/mobile/cityscapes.jpg");
+  background-image: url("../assets/stories/mobile/cityscapes.jpg");
 }
 .gallery-img-div:nth-child(3) {
-  background-image: url("../../assets/stories/mobile/18-days-voyage.jpg");
+  background-image: url("../assets/stories/mobile/18-days-voyage.jpg");
 }
 .gallery-img-div:nth-child(4) {
-  background-image: url("../../assets/stories/mobile/architecturals.jpg");
+  background-image: url("../assets/stories/mobile/architecturals.jpg");
 }
 
 .border-linear {
@@ -422,16 +422,16 @@ footer {
   }
 
   .gallery-img-div:nth-child(1) {
-    background-image: url("../../assets/stories/desktop/mountains.jpg");
+    background-image: url("../assets/stories/desktop/mountains.jpg");
   }
   .gallery-img-div:nth-child(2) {
-    background-image: url("../../assets/stories/desktop/cityscapes.jpg");
+    background-image: url("../assets/stories/desktop/cityscapes.jpg");
   }
   .gallery-img-div:nth-child(3) {
-    background-image: url("../../assets/stories/desktop/18-days-voyage.jpg");
+    background-image: url("../assets/stories/desktop/18-days-voyage.jpg");
   }
   .gallery-img-div:nth-child(4) {
-    background-image: url("../../assets/stories/desktop/architecturals.jpg");
+    background-image: url("../assets/stories/desktop/architecturals.jpg");
   }
 
   footer {
