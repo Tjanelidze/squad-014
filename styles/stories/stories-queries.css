@@ -27,28 +27,6 @@
   .intro-content .text-M {
     width: 38.7rem;
   }
-
-  .gallery-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .gallery-img-div {
-    padding: 34rem 4.267rem 4rem 4.267rem;
-  }
-
-  .gallery-img-div:nth-child(1) {
-    background-image: url("../../assets/stories/desktop/mountains.jpg");
-  }
-  .gallery-img-div:nth-child(2) {
-    background-image: url("../../assets/stories/desktop/cityscapes.jpg");
-  }
-  .gallery-img-div:nth-child(3) {
-    background-image: url("../../assets/stories/desktop/18-days-voyage.jpg");
-  }
-  .gallery-img-div:nth-child(4) {
-    background-image: url("../../assets/stories/desktop/architecturals.jpg");
-  }
   .gallery-img-div:nth-child(5) {
     background-image: url("../../assets/stories/desktop/world-tour.jpg");
   }
@@ -91,14 +69,5 @@
   .intro-section {
     background-image: url("../../assets/stories/desktop/moon-of-appalacia.jpg");
     padding: 12.2rem 0rem 12.2rem 12.2rem;
-  }
-
-  .gallery-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-  }
-
-  .gallery-img-div {
-    padding: 34rem 4rem 4rem 4rem;
   }
 }
