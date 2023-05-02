@@ -1,62 +1,17 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 62.5%;
-}
-
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.main {
-  width: 37.5rem;
-}
-
-.header {
-  display: flex;
-
-  justify-content: space-between;
-  align-items: center;
-  width: 37.5rem;
-  height: 7.2rem;
-  background-color: #ffffff;
-}
-
-.main_logo {
-  width: 17rem;
-  height: 1.6rem;
-  padding-left: 24px;
-}
-
-.menu_icon {
-  width: 20px;
-  margin-right: 24px;
-  background: none;
-  border: none;
-}
-
-.list {
-  display: none;
-}
-
 .title {
   display: flex;
   flex-direction: column;
 }
 
 .hero {
-  width: 37.5rem;
   height: 29.4rem;
+  background-image: url(../../assets/features/mobile/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .title_box {
-  width: 37.5rem;
   height: 30rem;
   background-color: #000000;
 }
@@ -80,8 +35,6 @@ body {
   height: 4rem;
   margin-top: 72px;
   margin-left: 29px;
-  font-family: "DM Sans";
-  font-style: normal;
   font-weight: 700;
   font-size: 3.2rem;
   line-height: 4rem;
@@ -94,8 +47,6 @@ body {
   width: 31.8rem;
   height: 10rem;
   color: #ffffff;
-  font-family: "DM Sans";
-  font-style: normal;
   font-weight: 400;
   font-size: 1.5rem;
   line-height: 2.5rem;
@@ -133,8 +84,6 @@ body {
 }
 
 .box_heading {
-  font-family: "DM Sans";
-  font-style: normal;
   font-weight: 700;
   font-size: 1.8rem;
   line-height: 2.5rem;
@@ -145,8 +94,6 @@ body {
 .box_p {
   width: 31rem;
   height: 7.5rem;
-  font-family: "DM Sans";
-  font-style: normal;
   font-weight: 400;
   font-size: 1.5rem;
   line-height: 2.5rem;
@@ -161,7 +108,7 @@ body {
 }
 .footer_upper_part {
   position: relative;
-  background-image: url(./assets/shared/mobile/bg-beta.jpg);
+  background-image: url("../../assets/shared/mobile/bg-beta.jpg");
   height: 28.8rem;
 }
 
@@ -180,8 +127,6 @@ body {
 }
 
 .footer_upper_part_heading {
-  font-family: "DM Sans";
-  font-style: normal;
   font-weight: 700;
   font-size: 3.2rem;
   line-height: 4rem;
@@ -193,14 +138,12 @@ body {
   top: 64px;
 }
 
-.footer_upper_part_p {
+.footer_upper_part_a {
   width: 11.8rem;
   height: 1.6rem;
   position: absolute;
   left: 35px;
   top: 208px;
-  font-family: "DM Sans";
-  font-style: normal;
   font-weight: 700;
   font-size: 1.2rem;
   line-height: 1.6rem;
@@ -209,6 +152,7 @@ body {
   color: #ffffff;
   text-transform: uppercase;
   display: inline;
+  text-decoration: none;
 }
 
 .footer_arrow {
@@ -248,8 +192,6 @@ body {
 }
 
 .footer_nav_items {
-  font-family: "DM Sans";
-  font-style: normal;
   font-weight: 700;
   font-size: 1.2rem;
   line-height: 1.6rem;
@@ -260,17 +202,19 @@ body {
   text-decoration: none;
 }
 
+.footer_invitation_div {
+  margin-top: 119px;
+}
+
 .footer_invitation {
-  font-family: "DM Sans";
-  font-style: normal;
   font-weight: 700;
   font-size: 1.2rem;
   line-height: 1.6rem;
   letter-spacing: 2px;
   color: #ffffff;
   margin-left: 102px;
-  margin-top: 119px;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 .main_footer_arrow {
@@ -286,8 +230,6 @@ body {
 }
 
 .copyright {
-  font-family: "DM Sans";
-  font-style: normal;
   font-weight: 400;
   font-size: 1.5rem;
   line-height: 2rem;
