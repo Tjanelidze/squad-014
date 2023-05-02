@@ -16,7 +16,7 @@
 
 ### Website preview image
 
-![](./assets/preview.jpg)
+![Website preview image](./assets/preview.jpg "Project Preview")
 
 ### Links
 
