@@ -17,55 +17,23 @@
       sizes="32x32"
       href="./assets/favicon-32x32.png"
     />
-    <link rel="stylesheet" href="../styles/general.css">
-    <link rel="stylesheet" href="../styles/features/features.css" />
-    <link rel="stylesheet" href="../styles/features/features-queries.css">
-
+    <link rel="stylesheet" href="features.css" />
 
     <title>Frontend Mentor | Photosnap Website Challenge</title>
   </head>
   <body>
-    <header>
-      <div class="header-div">
-        <nav class="nav-bar">
-          <a href="#"> <img src="../assets/shared/desktop/logo.svg" alt="logo icon"> </a>
-          <ul>
-            <a href="./stories.html">
-              <li class="heading-S">STORIES</li>
-            </a>
-            <a href="./features.html">
-              <li class="heading-S">FEATURES</li>
-            </a>
-            <a href="#">
-              <li class="heading-S">PRICING</li>
-            </a>
-          </ul>
-          <a class="menu-btn"><img src="../assets/shared/mobile/menu.svg" alt="menu bar icon"></a>
-          <a class="close-btn"><img src="../assets/shared/mobile/close.svg" alt="close bar icon"></a>
-          <a href="#" class="button bg-black white-color">GET AN INVITE</a>
-        </nav>
-      </div>
-      <div class="mobile-menu-div">
-        <nav class="nav-bar-mobile">
-          <ul class="flex-column">
-            <a href="./stories.html">
-              <li>STORIES</li>
-            </a>
-            <a href="./features.html">
-              <li>FEATURES</li>
-            </a>
-            <a href="#">
-              <li>PRICING</li>
-            </a>
-          </ul>
-        </nav>
-        <button id="mobile-menu-btn" href="#" class="button bg-black white-color">GET AN INVITE</button>
-      </div>
-    </header>
     <main class="main">
-     
+      <div class="header">
+        <img class="main_logo" src="./assets/shared/desktop/logo.svg" alt="" />
+        <div class="menu">
+          <button class="menu_icon">
+            <img src="./assets/shared/mobile/menu.svg" alt="" />
+          </button>
+          <div class="list">Stories Features Pricing Get an invite</div>
+        </div>
+      </div>
       <div class="title">
-        <img class="hero" src="../assets/features/mobile/hero.jpg" alt="" />
+        <img class="hero" src="./assets/features/mobile/hero.jpg" alt="" />
         <div class="title_box">
           <!-- <p class="line"></p> -->
           <h2 class="title_heading">Features</h2>
@@ -80,7 +48,7 @@
         <div class="box1">
           <img
             class="box_logo"
-            src="../assets/features/desktop/responsive.svg"
+            src="./assets/features/desktop/responsive.svg"
             alt=""
           />
           <h2 class="box_heading">100% Responsive</h2>
@@ -93,7 +61,7 @@
         <div class="box2">
           <img
             class="box_logo"
-            src="../assets/features/desktop/no-limit.svg"
+            src="./assets/features/desktop/no-limit.svg"
             alt=""
           />
           <h2 class="box_heading">No Photo Upload Limit</h2>
@@ -105,7 +73,7 @@
         <div class="box3">
           <img
             class="box_logo"
-            src="../assets/features/desktop/embed.svg"
+            src="./assets/features/desktop/embed.svg"
             alt=""
           />
           <h2 class="box_heading">Available to Embed</h2>
@@ -117,7 +85,7 @@
         <div class="box4">
           <img
             class="box_logo"
-            src="../assets/features/desktop/custom-domain.svg"
+            src="./assets/features/desktop/custom-domain.svg"
             alt=""
           />
           <h2 class="box_heading">Custom Domain</h2>
@@ -129,7 +97,7 @@
         <div class="box5">
           <img
             class="box_logo"
-            src="../assets/features/desktop/boost-exposure.svg"
+            src="./assets/features/desktop/boost-exposure.svg"
             alt=""
           />
           <h2 class="box_heading">Boost Your Exposure</h2>
@@ -141,7 +109,7 @@
         <div class="box6">
           <img
             class="box_logo"
-            src="../assets/features/desktop/drag-drop.svg"
+            src="./assets/features/desktop/drag-drop.svg"
             alt=""
           />
           <h2 class="box_heading">Drag & Drop Image</h2>
@@ -160,46 +128,46 @@
           <p class="footer_upper_part_p">Get an invite</p>
           <img
             class="footer_arrow"
-            src="../assets/shared/desktop/arrow.svg"
+            src="./assets/shared/desktop/arrow.svg"
             alt=""
           />
         </div>
         <div class="main_footer">
           <img
             class="footer_main_logo"
-            src="../assets/shared/desktop/logo1.svg"
+            src="./assets/shared/desktop/logo1.svg"
             alt=""
           />
           <div class="social_networks">
             <img
               class="soc_nets_common_char"
-              src="../assets/shared/desktop/facebook.svg"
+              src="./assets/shared/desktop/facebook.svg"
               alt=""
             />
 
             <img
               class="soc_nets_common_char"
-              src="../assets/shared/desktop/youtube.svg"
+              src="./assets/shared/desktop/youtube.svg"
               alt=""
             />
             <img
               class="soc_nets_common_char"
-              src="../assets/shared/desktop/twitter.svg"
+              src="./assets/shared/desktop/twitter.svg"
               alt=""
             />
             <img
               class="soc_nets_common_char"
-              src="../assets/shared/desktop/pinterest.svg"
+              src="./assets/shared/desktop/pinterest.svg"
               alt=""
             />
             <img
               class="soc_nets_common_char"
-              src="../assets/shared/desktop/instagram.svg"
+              src="./assets/shared/desktop/instagram.svg"
               alt=""
             />
           </div>
           <nav class="footer_nav">
-          <a class="footer_nav_items" href="../index.html">Home</a>
+          <a class="footer_nav_items" href="index.html">Home</a>
           <a class="footer_nav_items" href="stories.html">Stories</a>
           <a class="footer_nav_items" href="features.html">Features</a>
           <a class="footer_nav_items" href="pricing.html">Pricing</a>
@@ -208,7 +176,7 @@
           <p class="footer_invitation">Get an invite</p>
           <img
             class="main_footer_arrow"
-            src="../assets/shared/desktop/arrow.svg"
+            src="./assets/shared/desktop/arrow.svg"
             alt=""
           />
         </div>
