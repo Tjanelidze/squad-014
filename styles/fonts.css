@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "DM Sans";
+  font-family: "DM Sans", sans-serif;
   src: url("../assets/fonts/DMSans-Regular.woff2") format("woff2"),
     url("../assets/fonts/DMSans-Regular.woff") format("woff"),
     url("../assets/fonts/DMSans-Regular.ttf") format("truetype"),
@@ -7,7 +7,7 @@
   font-weight: 400;
 }
 @font-face {
-  font-family: "DM Sans";
+  font-family: "DM Sans", sans-serif;
   src: url("../assets/fonts/DMSans-bold.woff2") format("woff2"),
     url("../assets/fonts/DMSans-bold.woff") format("woff"),
     url("../assets/fonts/DMSans-bold.ttf") format("truetype"),
